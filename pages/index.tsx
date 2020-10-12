@@ -25,12 +25,13 @@ const IndexPage = () => {
     const item = randomFacts[randomNumber];
     setSelectedFact(item.fact);
 
-    setTimeout(() => {
+    const interval = setInterval(() => {
       const randomNumber = Math.floor(Math.random() * randomFacts.length);
       console.info('randomNumber', randomNumber);
       const item = randomFacts[randomNumber];
       setSelectedFact(item.fact);
     }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   return (

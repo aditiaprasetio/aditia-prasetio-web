@@ -93,8 +93,8 @@ export default function Nav() {
                   <Link href="/">
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                      alt=""
+                      src="assets/logo.png"
+                      alt="Logo"
                     />
                   </Link>
                 </div>
